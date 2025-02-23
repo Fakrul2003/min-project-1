@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.posts{
+    width: 100%;
+    background-color: aqua;
+    padding: 1rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+
+}
+.post{
+    width: 20%;
+    margin: 0.3rem;
+    box-shadow:0 4px 8px 0 rgb(0, 0, 0, 0.2);
+    padding: 1rem;
+    transition: all 0.4s;
+}
+.post:hover{
+    box-shadow:0 8px 16px 0 rgb(0, 0, 0, 0.2);
+}
+
+/* responsive part start here */
+@media screen and (max-width:990px) {
+    .post{
+        width: 48%;
+       
+    }
+}
+@media screen and (max-width:600px) {
+    .post{
+        width: 100%;
+       
+    }
+}
+/* responsive part ends here */
