@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game </title>
+  <link rel="stylesheet" href="guessing.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-title">
+                <h1>Guessing Game</h1>
+            </div>
+            <div class="card-body">         
+               <form>
+                <div class="form-field">
+                    <label for="guessingNumber"> Guess a number 
+                        between 1-5:
+                    </label>
+                    <input type="number"   id="guessingNumber"
+                    min="1" max="5" required>
+                </div>
+                <div class="buttons">
+                    <button id="chack" type="submit">Chack result</button>
+                </div>
+               </form>
+               <!-- https://github.com/Fakrul2003/min-project-1.git -->
+      
+                <p class="resultText"></p>
+                <p class="Remaining"></p>
+               
+            
+        </div>
+        </div>
+    </div>
+    <script src="guessing.js"></script>
+</body>
+</html>

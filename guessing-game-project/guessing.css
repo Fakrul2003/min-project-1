@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@1,485&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration:none;
+    list-style-type: none;
+    font-family: "nunito", sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+    background-color: aqua;
+    border-radius: 10px;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222 ;
+    color: rgb(34, 86, 104);
+    font-size: 1.2rem;
+   
+}
+
+.card:hover{
+    box-shadow:  0.2rem 0.2rem 0.2rem #222;
+}
+
+.card-title{
+
+    text-align: center;
+    margin-bottom: 1rem;   
+}
+input{
+    width: 40%;
+    height: 25px;
+    border-radius: 0.2rem;
+    border: 0.1rem solid;
+    padding: 0.3rem;
+    background-color: rgb(218, 247, 247);
+    cursor: pointer;
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+#chack{
+    border-radius: 0.7rem;
+    border: 0.1rem solid;
+    padding: 0.3rem;
+    background-color: rgb(218, 247, 247);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.6s;
+}
+#chack:hover{
+    background-color: aqua;
+
+}
+
+p{
+    text-align: center;
+}
+.large-text{
+   
+    width: 200px;
+    font-size: 1.6rem;
+    background-color: bisque;
+  margin-top:10px;
+  margin-left:100px;
+   
+}
