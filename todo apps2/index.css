@@ -1,0 +1,20 @@
+
+
+
+ul{
+    list-style: none;
+    font-size: 2rem;
+}
+
+.completed{
+    text-decoration: line-through;
+   
+}
+.completed::before{
+    content: "✔️";
+    color: rgb(35, 254, 68);
+}
+li:not(.completed)::before{
+    content: "❌";
+    color: rgb(35, 254, 68);
+}
