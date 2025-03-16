@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 500px;
+    background-color: rgb(200, 187, 171);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px ;
+    border-radius: 10px;
+    height: 340px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+.todo-app::-webkit-scrollbar{
+    width: 10px;   
+}
+
+.todo-app::-webkit-scrollbar-track{
+  
+  border-radius: 10px;
+}
+
+.todo-app::-webkit-scrollbar-thumb{
+    background: #888;
+    border-radius: 10px;
+}
+.todo-app::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ✅ স্ক্রল বারের উপরে ▲ এবং নিচে ▼ চিহ্ন যোগ করা */
+.todo-app::-webkit-scrollbar-button:single-button {
+    background-color: #ddd;
+    display: block;
+    height: 15px;
+    border-radius: 10px;
+}
+
+/* উপরের ▲ চিহ্ন */
+.todo-app::-webkit-scrollbar-button:single-button:decrement {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23555" d="M7 14l5-5 5 5z"/></svg>') no-repeat center;
+    background-size: 10px;
+}
+
+/* নিচের ▼ চিহ্ন */
+.todo-app::-webkit-scrollbar-button:single-button:increment {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23555" d="M7 10l5 5 5-5z"/></svg>') no-repeat center;
+    background-size: 10px;
+}
+
+
+
+
+
+
+.todo-app h1{
+    color: rgb(69, 150, 150);
+  display: flex;
+ align-items: center;
+ 
+  
+}
+.todo-app h1 img{
+    width: 30px;
+    margin-left: 20px;
+}
+.inputBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    padding-left:20px ;
+}
+input{
+    flex: 1;
+    background:transparent;
+    outline: none;
+    border: none;
+    font-weight:10px ;
+    padding: 14px;
+
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    border-radius:40px ;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 50px ;
+    font-size: 17px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+   
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50px;
+    background-image:url(notes-icon-logo-vector-design-template_827767-4987.avif) ;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+ background-image: url(10828522.png);
+   
+}
+ul li span{
+    position: absolute;
+   right: 0;
+   color: #ff1414;
+   background-color: #555;
+   border-radius: 50px;
+}
+ul li span:hover{
+    background-color: #edeef0;
+}
